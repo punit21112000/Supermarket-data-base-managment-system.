@@ -1,0 +1,1 @@
+# Supermarket-data-base-managment-system.
