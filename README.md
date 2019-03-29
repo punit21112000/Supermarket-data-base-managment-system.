@@ -1,4 +1,4 @@
-# Supermarket-data-base-managment-system.
+# Supermarket data-base managment system.
 ## Problem Statement :
 This program helps Supermarket maintain a database of thier products and help them keep track of thier product.
 Admins of the Supermarket can maintain the database by adding new products which are kept in store,they can delete products if they expire.
