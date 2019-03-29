@@ -7,9 +7,10 @@ This program also helps in sorting items when having big oders.The program also 
     
 ## Problem setting :
     1.Admin:
-      The admin will be able to add and delete the products availible in the store.The admin will be able to sort and search data accoring to the various divisions (i.e Product Id, Category, Name of Product, Price, quantity discount, price after discount. 
-    2. Customer:
-        The customer will be able to order products, and will also be able to sort and search items according to his preference 
+The admin will be able to add and delete the products availible in the store.The admin will be able to sort and search data accoring to the various divisions (i.e Product Id, Category, Name of Product, Price, quantity discount, price after discount. 
+    
+    2.Customer:
+The customer will be able to order products, and will also be able to sort and search items according to his preference 
         
  ## Aspets The code Uses :
     1.File input/output:
