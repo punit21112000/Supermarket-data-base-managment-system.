@@ -1,18 +1,18 @@
-# Supermarket data-base managment system.
+# Supermarket data-base management system.
 ## Problem Statement :
-This program helps Supermarket maintain a database of thier products and help them keep track of thier product.
-Admins of the Supermarket can maintain the database by adding new products which are kept in store,they can delete products if they expire.
-The program also has a seprate interface for customers to check the price of different products and its discounts and even order the products they want and get an invoice.
-This program also helps in sorting items when having big oders.The program also helps in finding products from the data base
+This program helps Supermarket maintain a database of their products and help them keep track of their product.
+Admins of the Supermarket can maintain the database by adding new products which are kept in store, they can delete products if they expire.
+The program also has a separate interface for customers to check the price of different products and its discounts and even order the products they want and get an invoice.
+This program also helps in sorting items when having big orders. The program also helps in finding products from the data base
     
-## Problem setting :
+## Problem setting:
     1.Admin:
-The admin will be able to add and delete the products availible in the store.The admin will be able to sort and search data accoring to the various divisions (i.e Product Id, Category, Name of Product, Price, quantity discount, price after discount. 
+The admin will be able to add and delete the products available in the store. The admin will be able to sort and search data according to the various divisions (i.e Product Id, Category, Name of Product, Price, quantity discount, price after discount. 
     
     2.Customer:
 The customer will be able to order products, and will also be able to sort and search items according to his preference 
         
- ## Aspets The code Uses :
+ ## Aspects The code Uses :
     1.File input/output:
 Our program will have 2 parts. :
 
