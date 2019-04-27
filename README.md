@@ -24,4 +24,4 @@ The admin and the customer will both be able to sort and search data on their pr
 Eg. Data could be sorted according to the number of items and can be searched according to the category.
 
     3.Dynamic memory management:
-Searching and Sorting of products are done dynamically using pointer.
+pointers are used during sorting functions.
