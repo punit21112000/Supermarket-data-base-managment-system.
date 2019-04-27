@@ -9,7 +9,7 @@
 #include "administrator.h"
 using namespace std;
 
-
+// Main function 
 int main ()
 {
   cout<<"1.Admin"<<endl;

@@ -5,11 +5,12 @@
 #include <string>
 #include <cstdio>
 #include <iomanip>
+#include "customer.h"
 #include <cstdlib>
 #include <iostream>
 using namespace std;
 
-
+// Gives Pno and Quatntiy to place Order
 void productc::order()
     {
       cout << "Enter Product Number: "<<endl;
@@ -18,7 +19,7 @@ void productc::order()
       cin  >> q;
     }
 
-
+// Updates the recod after Order is placed 
 void productc::modify (int q,int inod)
    {
      ifstream fil1;
@@ -48,7 +49,7 @@ void productc::modify (int q,int inod)
      rename("admin2.txt","admin.txt");
    }
 
-
+// Fuction Places order and preforms necessary updates 
    void productc::writeorder(int a,int b)
    {
      ifstream fil1;
@@ -77,7 +78,7 @@ void productc::modify (int q,int inod)
      fil2.close();
    }
 
-
+// Checks if the quantity orderd is not higher then the quantity availible
    int productc::update (int a, int b)
    {
 
@@ -93,7 +94,7 @@ void productc::modify (int q,int inod)
      }
    }
 
-
+//Function to Place Order
   void productc::placeorder()
     {
       ifstream fil;
@@ -151,7 +152,7 @@ void productc::modify (int q,int inod)
       }while(x=='y'|| x=='Y');
       f1.close();
   }
-
+// Displays the order placed by the user and prints an invoice online
   void productc::dispbill()
   {
     double sum=0;
@@ -195,7 +196,7 @@ void productc::modify (int q,int inod)
     cout <<setw(80)<< "--------------------------------------------------------------------------------------------------------"<<endl ;
   }
 
-
+// Menu for Customer
 void menuc ()
 {
   char c;
