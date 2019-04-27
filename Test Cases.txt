@@ -37,8 +37,6 @@ y
 1000
 n
 y
-6
-y
 7
 
 Test Case 2:
