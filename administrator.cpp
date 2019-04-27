@@ -309,7 +309,8 @@ exit(1);
   remove("admin.txt");
   rename("admin2.txt","admin.txt");
   }
-//Sorts the records according to product number
+//Sorts the records according to product number in a new file called admin1 
+// Dynamic Memory Allocation is Used here
 void sort ()
 {
   ifstream fin;
