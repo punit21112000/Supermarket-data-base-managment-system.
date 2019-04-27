@@ -312,7 +312,86 @@ exit(1);
 //Sorts the records according to product number
 void sort ()
 {
-  cout <<"asfsds";
+  ifstream fin;
+  fstream f;
+  fin.open("admin.txt");
+  f.open("admincopy.txt",ios::out);
+  product *q=new product;
+  if ( fin.fail() )
+  {
+    cout << "Error in file opening!"	<< endl;
+    exit(1);
+  }
+  if ( f.fail() )
+  {
+    cout << "Error in file opening!"	<< endl;
+    exit(1);
+  }
+  while(fin.read((char*)&q,sizeof(q)))
+  {
+    f.write((char*)&q,sizeof(q));
+  }
+  fin.close();
+  f.close();
+  f.open("admincopy.txt",ios::in);
+  ofstream fout("admin1.txt",ios::out);
+  if ( fout.fail() )
+  {
+    cout << "Error in file opening!"	<< endl;
+    exit(1);
+  }
+  int pno1, quant1;
+  string name1,categ1;
+  double price1, qty1, disc1;
+  while(f>>pno1)
+  {
+    f.close();
+    f.open("admincopy.txt",ios::in);
+    int small = 9000;
+    for(int i=0;f >> pno1 >> categ1 >> name1 >> price1 >> quant1 >> disc1;i++)
+    {
+      if( pno1<=small)
+      {
+        small=pno1;
+      }
+    }
+    f.close();
+    ofstream fil2;
+    fil2.open ("admincopy2.txt");
+    f.open("admincopy.txt",ios::in);
+    if ( f.fail() )
+    {
+      cout << "Error in file opening!"	<< endl;
+      exit(1);
+    }
+    if ( fil2.fail() )
+    {
+     cout << "Error in file opening!"	<< endl;
+     exit(1);
+    }
+    while (f >> pno1 >> categ1 >> name1 >> price1 >> quant1 >> disc1)
+    {
+      if (pno1 != small)
+       {
+         fil2 << pno1 << " " << categ1 << " " << name1 << " " << price1 << " "<< quant1 << " "<< disc1 << endl;
+       }
+      if (small == pno1)
+      {
+        fout << pno1 << " " << categ1 << " " << name1 << " " << price1 << " " << quant1 << " " << disc1 << endl;
+      }
+    }
+    f.close();
+    fil2.close ();
+    remove ("admincopy.txt");
+    rename ("admincopy2.txt", "admincopy.txt");
+    f.open("admincopy.txt",ios::in);
+  }
+  remove ("admincopy.txt");
+  remove("admin1.txt");
+  rename ("admin1.txt", "admin.txt");
+  f.close();
+  fout.close();
+  delete q;
 }
 
 // Menu for admin 
